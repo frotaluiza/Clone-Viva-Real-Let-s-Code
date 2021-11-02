@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" defer crossorigin="anonymous"></script>
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="nav_bar">
+        <!-- Logo -->
+        <div class="image_div" id="logo_div"><img src="./Images/casa.svg" alt=""></div>  
+        <!-- Option Links -->
+        <section id="options_nav_center" class="options_nav">
+            <a href="#">COMPRAR</a>
+            <a href="#">ALUGAR</a>
+            <a href="#">IMÓVEIS NOVOS</a>
+            <a href="#">DESCOBRIR</a>
+            <a href="#">FINANCIAMENTO</a>
+        </section>
+        <section id="options_nav_right" class="options_nav">
+            <a href="#" id="anunciar">ANUNCIAR IMÓVEIS</a>
+            <a href="#">ENTRAR</a>
+        </section>
+    </nav>
+    <!-- END OF NAVBAR -->
+
+    <!-- Begining of Grid -->
+    <div id="grid">
+                <div id="filters">
+                    <div id="search-card" class="card"> 
+                        <p>LOCALIZAÇÃO DO IMÓVEL</p>
+                        <input type="text" class="inp" id="search" placeholder="Digite uma rua,bairro ou cidade">
+                        <p id="jsAdd"></p>
+                        <p>IMÓVEL COM</p>
+                        <div class="form-check form-switch " id="switch" >
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" />
+                            <label class="form-check-label" for="flexSwitchCheckDefault"
+                              >Tour Virtual ou Vídeos</label
+                            >
+                          </div>
+                        <p>TIPO DE IMÓVEL</p> 
+                        <select class="inp" class="form-select" aria-label="Default select example">
+                            <option selected>Mostrar todos</option>
+                            <option value="1">Apartamento</option>
+                            <option value="2">Casa de condomínio</option>
+                            <option value="3">Prédio/edifício inteiro</option>
+                        </select>
+                        <div id="min_max_price">
+                            <div id="p_min">
+                                <p>PREÇO MÍNIMO</p>
+                                <input type="text" class="inp" placeholder=" R$">
+                            </div>
+                            <div id="p_max">
+                                <p>PREÇO MÁXIMO</p>
+                                <input type="text" class="inp" placeholder=" R$          Ilimitado">
+                            </div>  
+                            
+                        </div>
+                        <div class="line"></div>
+                        <p>NÚMERO DE QUARTOS</p>
+                        <div class="qtd_rooms" >
+                            <button class="shadow-sm">1+</button>
+                            <button class="shadow-sm">2+</button>
+                            <button class="shadow-sm">3+</button>
+                            <button class="shadow-sm">4+</button>
+                            <button class="shadow-sm">5+</button>
+                        </div>  
+                    </div>
+                    <div id="extra_filters_card" class="card">
+                        <div id="areas">
+                            <div id="min_area" class="area_filter">
+                                <p>AREA MINIMA</p>
+                                <input type="text" class="inp" placeholder="m²">
+                            </div>
+                            <div id="max_area" class="area_filter" >
+                                <p>AREA MAXIMA</p>
+                                <input type="text"  class="inp" placeholder="Ilimitado m²">
+                            </div> 
+                        </div>
+                        <div class="line"></div>
+                        <p class="p_fil">NUMERO DE VAGAS NA GARAGEM</p>
+                        <div class="qtd_rooms"  class="qtd_buttons">
+                            <button class="shadow-sm">1+</button>
+                            <button class="shadow-sm">2+</button>
+                            <button class="shadow-sm">3+</button>
+                            <button class="shadow-sm">4+</button>
+                            <button class="shadow-sm">5+</button>
+                        </div> 
+                        <p class="p_fil">NUMERO DE BANHEIROS</p>
+                        <div class="qtd_rooms" class="qtd_buttons">
+                            <button class="shadow-sm">1+</button>
+                            <button class="shadow-sm">2+</button>
+                            <button class="shadow-sm">3+</button>
+                            <button class="shadow-sm">4+</button>
+                            <button class="shadow-sm">5+</button>
+                        </div> 
+                        <p class="p_fil">LAZER E ESPORTE</p>
+                        <div id="lazer">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Academia
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Churrasqueira
+                                </label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Cinema
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Espaço gourmet
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Espaço verde/ Parque
+                                </label>
+                              </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  Gramado 
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Jardim
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" >
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Piscina
+                                </label>
+                              </div>
+                        </div>
+                        
+    
+                    </div>
+                </div>
+
+                <!-- Main -->
+               <div id="main-conteiner">
+                <nav id="nav_2" >
+                    <ul class="pagination" >
+                      <li class="page-item"><a class="page-link" class="clickedB" href="#">COMPRAR</a></li>
+                      <li class="page-item"><a class="page-link" class="clickedB" href="#">ALUGAR</a></li>
+                      <li class="page-item"><a class="page-link" class="clickedB" href="#">IMÓVEIS NOVOS</a></li>
+                      <li class="page-item"><a class="page-link" class="clickedB" href="#">SELEÇÃO VIVA REAL</a></li>
+                    </ul>
+                </nav>
+                <div id="line_nav"></div>
+                <div id="insertCards">
+                    
+                </div>
+                </div>
+                
+            
+            
+
+
+    </div>
+   
+</body>
+<script src="index.js" type="module"></script> 
+</html>

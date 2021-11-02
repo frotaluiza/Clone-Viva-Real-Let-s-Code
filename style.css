@@ -1,0 +1,528 @@
+/* Nav-bar styling */
+body{
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#logo_div{
+    position:relative;
+    left:48px;
+    bottom:2px;
+}
+
+#nav_bar{
+    display:flex;
+    background-color:#0078ff;
+    align-items:center;
+    height: 56px;
+}
+
+.options_nav a{
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+#options_nav_center{
+    display:flex;
+    justify-content:space-around;
+    width:50%;
+    position: relative;
+    left:90px;
+}
+
+#options_nav_right{
+    display:flex;
+    margin-left: auto;
+    position:relative;
+    right: 65px;
+}
+
+#anunciar{
+    margin-right:33px;
+}
+
+
+/* Grid */
+
+#flexSwitchCheckDefault{
+    width: 20%;
+    height:30px;  
+    background-color: RGB(228, 207, 140)!important;
+    border-color: RGB(228, 207, 140) !important ;
+    
+}
+
+
+
+
+
+.form-switch :focus{
+    transition: none !important ;
+    appearance: none !important;
+    outline-style: none !important;
+    border-image-outset: none !important;
+    border-image-source: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+    
+
+}
+
+
+
+
+
+
+
+
+#flexSwitchCheckDefault :focus{
+  outline: none !important;
+  box-shadow: none !important;
+  background-color:#146611 !important;
+  animation:none;
+}
+
+.afterClickSwitch{
+    border: none;
+    outline: none;
+}
+
+#switch{
+    margin-top: -10px;
+    display: flex;
+    align-items:center;    
+}
+
+#grid{
+    display:flex;
+    height:3032px;
+    padding: 60px 50px 10px ;
+    
+}
+
+#filters{    
+    width: 288px;
+    margin-right: 25px;
+}
+.card{
+    
+    padding:16px;
+    font-weight: 600;
+    font-size: 13px;
+    color:rgba(0,0,0,.54);
+}
+
+#search-card{
+    width: 288px;
+    background-color: #fcd685;
+    margin-bottom: 24px;
+    border:1px solidrgba(0, 0, 0, 0.87);
+}
+
+
+
+.inp{
+    height: 44px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    align-items: center;
+    color:gray;
+}
+
+/* Main */
+
+#main-conteiner{
+    width:100%;
+}
+
+#navigation{
+    grid-area: main;
+    width: 50%;
+    
+}
+#navigation ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    box-sizing: border-box !important;
+
+}
+
+
+#navigation li {
+    font-size:small;
+    box-sizing: border-box !important;
+}
+
+#navigation li :hover{
+    background-color:aquamarine;
+}
+
+#nav_2 a{
+    border-radius: 0%;
+    border-top: none ;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 16px;
+    position: relative;
+    box-sizing: border-box !important;
+    font-size:13px;
+    font-weight: 600;
+    z-index: 100;
+}
+
+
+.pagination{
+    position:absolute;
+}
+
+#line_nav{
+    width:100%;
+    border-top: 1px solid rgb(235, 235, 235);
+    position:relative;
+    top:45px;
+    
+}
+
+
+
+
+
+#nav_2 li :focus{
+    border-bottom: 5px solid blue !important;
+    background-color: white;
+    appearance: none !important;
+    outline-style: none !important;
+    border-image-outset: none !important;
+    border-image-source: none !important;
+    border-color: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+
+.clickedB{
+    
+    border-width: 3px;
+    border-color: #0078ff;
+}
+
+#min_max_price + .line{
+    border-top: 1px solid RGB(224, 188, 111);
+}
+
+
+#min_max_price input{
+    width: 100%;
+}
+
+#p_min{
+    margin-right:25px;
+}
+
+.qtd_rooms button{
+    border-radius: 20px;
+    border: none;
+    padding:7px 13px 7px 13px;
+    margin-right: 9px;
+    background-color: white;
+    color:gray;
+    border: 1px solid lightgray;
+}
+
+.qtd_rooms button:hover{
+    
+    background-color:lightgray;
+}
+.qtd_rooms{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+
+}
+
+#extra_filters_card{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+}
+
+.p_fil {
+    position:relative;
+    top:7px;
+}
+
+
+#areas,#min_max_price{
+    display:flex;
+    width: 100%;
+    z-index: 100;
+}
+
+#areas input{
+    width:100%;
+}
+
+
+#areas ::placeholder{
+    text-align: right;
+    padding-right: 5px;
+    color:rgb(150, 138, 138);
+  }
+
+#min_max_price ::placeholder{
+    color:rgb(150, 138, 138);
+}
+
+.line{
+    width:100%;
+    border-top: 1px solid lightgray;
+    position: relative;
+    bottom: 20px;
+}
+
+#min_area{
+    margin-right: 25px;
+}
+
+/* Error screen */
+
+.errorh1{
+    font-size:40px;
+    font-weight: 600;
+    text-align: center;
+}
+.errorh2{
+    font-size:30px;
+    font-weight: 400;
+    color:red;
+    text-align: center;
+}
+
+/* Card style */
+
+.cardDiv{
+    /* padding:10px; */
+    display: grid;
+    grid-template-areas: 
+    "img infDiv";
+    color:rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    height:240px;
+    margin-bottom: 15px;
+}
+.box {
+    transition: box-shadow .3s;
+    border-radius:5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    
+  }
+  .box:hover {
+    box-shadow: 0 0 8px rgba(33,33,33,.2); 
+
+  }
+
+
+
+#imgDiv{
+    /* grid-area: img; */
+    width:360px;
+    height:240px;
+    overflow: hidden;
+}
+
+#address,#title{
+    padding-right: 16px;
+}
+
+
+#address{
+    grid-area:address;
+    font-size:13px;
+    font-weight: 400;
+    color: RGB(140, 143, 148);
+    padding-top:16px;
+    margin-bottom: 3px;
+    flex-wrap: wrap;
+    width: 400px;
+
+
+}
+
+#title{
+    /* grid-area:title; */
+    font-size:20px;
+    font-weight: 400;
+    padding-bottom: 16px;
+    margin-bottom: 0px;
+    flex-wrap: wrap;
+    width:450px;
+}
+
+#count{
+    margin-top: 70px;
+    font-size:20px;
+    font-stretch: 100%;
+    font-weight: 400;
+    color:rgba(0, 0, 0, 0.87);
+}
+
+#count span{
+    font-size:22px;
+    font-weight: 600;
+}
+
+#count a{
+    display: block;
+    text-decoration: none;
+    width:fit-content;
+    padding: 7px 10px 7px 10px;
+    border: 1px solid #0078ff;
+    color:#0078ff;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+#count a:hover{
+    background-color:rgb(236, 245, 248);
+
+}
+
+#specsDiv{
+    display: flex;
+    justify-content:flex-start;
+    font-size:13px;
+}
+
+#specsDiv p{
+    margin-right: 8px;
+
+}
+
+#specsDiv span{
+    font-size:13px;
+    font-weight: 600;
+}
+
+span{
+    font-size:25px;
+}
+
+#amenDiv{
+    display:flex;
+    width:380px;
+    flex-wrap: wrap;
+}
+
+#amenDiv p{
+    background-color: RGB(235, 235, 235);
+    border-radius: 10px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    color: RGB(166, 172, 182);
+    font-weight: 600;
+    font-size:13px;
+    padding:2px 6px 2px 6px;
+    white-space:nowrap;
+    
+}
+
+#priceAlone{
+    font-size:20px;
+    font-weight: 600;
+    position: relative;
+    top:24px;
+}
+
+#priceWithC{
+    font-size:20px;
+    font-weight: 600;
+    position: relative;
+    top:5px;
+}
+
+#condominio{
+    font-size:13px;
+    font-weight: 400;
+    position: relative;
+    bottom: 17px;
+}
+
+#condominio span{
+    font-size:13px;
+    font-weight:600;
+}
+
+.infDiv{
+    margin-right: 100px;
+}
+
+
+
+
+#infDivHasBoth{
+    display: flex;
+    flex-direction:column;
+}
+
+#infDivHasOnlyCond{
+    display: flex;
+    flex-direction:column;
+}
+
+#infDivHasNone{
+    display: flex;
+    flex-direction:column;
+}
+#infDivHasOnlyAmenities{
+    display: flex;
+    flex-direction:column;
+}
+
+.form-check{
+    color:rgb(102, 100, 100);
+    font-size:14px;
+    font-weight:400;
+    padding-bottom: 15px;
+}
+
+.form-check-input{
+    margin-right: 20px;
+    
+    
+}
+
+#lazer{
+    margin-left: 20px;
+    margin-top:10px;
+}
+
+
+
+#jsAdd{
+    font-weight: 400;
+    margin-top:10px;
+}
+
+#insertCards{
+    margin-top:50px;
+}
+
+
+
